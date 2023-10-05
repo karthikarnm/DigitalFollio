@@ -5,7 +5,7 @@ import {
     creator,
     web,
     javascript,
-
+python,
     html,
     css,
     reactjs,
@@ -20,7 +20,8 @@ import {
     diploma,
     celebal,
     dotglasse,
-    phablecare
+    phablecare,
+  
 } from "../assets";
 
 const navLinks = [
@@ -110,6 +111,10 @@ const technologies = [
     {
         name: "git",
         icon: git,
+    },
+    {
+        name: "Python",
+        icon: python,
     }
 ];
 

@@ -42,7 +42,7 @@ const About = () => {
       </motion.div>
       <motion.p variants={fadeIn('', '', 0.1, 1)} className='
       mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Hello, I am Engineer Student, a highly motivated individual with a passion for both front-end, back-end development and Software development . I bring a wealth of skills in JavaScript, Python, NodeJs, ExpressJs, MongoDB, SQL, HTML, and CSS, making me proficient in the entire web development stack.
+        I am Engineering Graduate and a highly motivated individual with a passion for both front-end, back-end development. I bring a wealth of skills in JavaScript, Python, NodeJs, ExpressJs, MongoDB, SQL, HTML, and CSS which makes me proficient in the entire web development stack.
       </motion.p>
       <div className=' mt-20 flex flex-row flex-wrap gap-10'>
         {services.map((service, index) => (
