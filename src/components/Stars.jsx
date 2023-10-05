@@ -25,7 +25,7 @@ const CertificationCard = ({index, title, icon, description}) =>{
           }}
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col items-center justify-evenly flex-col'
         > 
-          <img src={icon} alt={title} className='w-16 h-16 object-contain' /><a href="https://drive.google.com/file/d/1qW5lo6SD9USsuONC-5P180UmspMX_zyl/view?usp=share_link" >Link  </a>
+          <img src={icon} alt={title} className='w-16 h-16 object-contain' />
           <h3 className='text-white text-[15px] font-bold text-center'>{title}</h3>
           <motion.p variants={fadeIn('', '', 0.1, 1)} className='
       mt-4 text-secondary text-[5px]'>
