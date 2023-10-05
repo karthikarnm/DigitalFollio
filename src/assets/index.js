@@ -32,7 +32,7 @@ import diploma from './diploma.png'
 import celebal from './company/Celebal.png'
 import dotglasse from './company/dotglasse.png'
 import phablecare from './company/phablecare.png'
-
+import  Karanam_Karthik  from "./ResumeDownload/Karanam_Karthik.pdf"
 export {
   logo,
   backend,
@@ -62,5 +62,6 @@ export {
   diploma,
   celebal,
   dotglasse,
-  phablecare
+  phablecare,
+  Karanam_Karthik
 };

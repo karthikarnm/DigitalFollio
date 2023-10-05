@@ -8,6 +8,7 @@ import { EarthCanvas } from "./canvas"
 import { Wrapper } from "../HOC"
 import { slideIn } from "../utils/motion"
 
+import  Resume  from "./Resume"
 // template_qruq1ji 
 // service_5gjaj2u
 // xW5NnXCMjXW4lBGaO
@@ -82,14 +83,23 @@ setForm({ name: "", email: "", message: "" })
               onChange={handleChange}
             />
           </label>
-<button type="submit" className="bg-tertiary py-3 px-8 md-4 outlined-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl">{loading ? 'Sending...' : 'Send'}</button>
+<button type="submit" className="bg-tertiary py-3 px-8 md-2 outlined-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl">{loading ? 'Sending...' : 'Send'}</button>
+          
+
         </form>
+       
 
       </motion.div>
       <motion.div variants={slideIn("right", 'tween', 0.2, 1)}
       className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]" >
         <EarthCanvas />
+        
       </motion.div>
+      <motion.div 
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]" >
+        <Resume />
+      </motion.div>
+    
 
     </div>
   )

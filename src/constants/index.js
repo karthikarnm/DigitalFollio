@@ -44,6 +44,10 @@ const navLinks = [
         id: "stars",
         title: "Certifications",
     },
+    {
+        id: "resume",
+        title: "Resume",
+    },
 ];
 
 const services = [

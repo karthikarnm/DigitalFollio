@@ -13,6 +13,7 @@ import { Wrapper } from '../HOC';
 const CertificationCard = ({index, title, icon, description}) =>{
   return (
     <Tilt className='xs:w-[250px] w-full' >
+   
       <motion.div
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
@@ -23,16 +24,17 @@ const CertificationCard = ({index, title, icon, description}) =>{
             speed: 450
           }}
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col items-center justify-evenly flex-col'
-        >
-          <img src={icon} alt={title} className='w-16 h-16 object-contain' />
+        > 
+          <img src={icon} alt={title} className='w-16 h-16 object-contain' /><a href="https://drive.google.com/file/d/1qW5lo6SD9USsuONC-5P180UmspMX_zyl/view?usp=share_link" >Link  </a>
           <h3 className='text-white text-[15px] font-bold text-center'>{title}</h3>
           <motion.p variants={fadeIn('', '', 0.1, 1)} className='
       mt-4 text-secondary text-[5px]'>
-      {description}
+  
           </motion.p>
 
         </div>
       </motion.div>
+    
     </Tilt>
   )
 }
