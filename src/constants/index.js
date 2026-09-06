@@ -21,7 +21,7 @@ python,
     celebal,
     dotglasse,
     phablecare,
-  
+   
 } from "../assets";
 
 const navLinks = [
@@ -53,31 +53,32 @@ const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Data Engineer",
         icon: web,
     },
     {
-        title: "FrontEnd Developer",
+        title: "Platform Engineer",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "GenAI Specialist",
         icon: backend,
     },
 
 ];
 const certificates = [
     {
-        title: "Full Stack Development course by HEROVIRED",
+        title: "Databricks Certified Generative AI Engineer Associate",
         icon: web,
-        description: "Course completion certificate from Herovired.https://drive.google.com/file/d/1qW5lo6SD9USsuONC-5P180UmspMX_zyl/view?usp=share_link"
+        description: "Databricks Certification - GenAI expertise in RAG pipelines and multi-agent systems"
+    },
+    {
+        title: "Full Stack Development course by HEROVIRED",
+        icon: mobile,
+        description: "Course completion certificate from Herovired. https://drive.google.com/file/d/1qW5lo6SD9USsuONC-5P180UmspMX_zyl/view?usp=share_link"
     },
     {
         title: "Got Certification in Hacker Rank",
-        icon: mobile,
-    },
-    {
-        title: "Got Certification In Joy of Computing python By NPTEL",
         icon: backend,
     },
 
@@ -85,175 +86,175 @@ const certificates = [
 
 const technologies = [
     {
-        name: "HTML ",
+        name: "Python",
+        icon: python,
+    },
+    {
+        name: "PySpark",
+        icon: python,
+    },
+    {
+        name: "SQL",
         icon: html,
     },
     {
-        name: "CSS ",
-        icon: css,
+        name: "Databricks",
+        icon: reactjs,
+    },
+    {
+        name: "AWS",
+        icon: nodejs,
+    },
+    {
+        name: "Terraform",
+        icon: mongodb,
+    },
+    {
+        name: "Git",
+        icon: git,
     },
     {
         name: "JavaScript",
         icon: javascript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "Python",
-        icon: python,
     }
 ];
 
 const experiences = [
     {
-        title: "Full stack Developer Intern",
-        company_name: "DotGlasses",
-        icon: dotglasse,
+        title: "Junior Engineer",
+        company_name: "Byte Analytics Private Limited",
+        icon: celebal,
         iconBg: "#E6DEDD",
-        date: "May 2022 - july 2022",
+        date: "Feb 2024 - Present",
         points: [
-            "DOT Glasses is the first sustainable evolution to the world’s vision problem • Adjustable one-size-fits-all eyeglasses • A transformational lens concept",
-            "Building an webpage.",
-            "Made this website responsive using REACT JS.",
-            "Created a Chat Bot using MONGO DB, NODE JS, EXPRESS JS, REACTJS",
-            "Building an authentication user login and Sign up",
-            "This project was successfully completed with my strategies.My presentation got good appreciation from company."
-
-        ],
-    },
-   
-    {
-        title: "Frontend Developer Intern",
-        company_name: "Phable Care",
-        icon: phablecare,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - March 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-
+            "Contracted to Continental Resources Inc. for enterprise Databricks environments",
+            "Built self-service access-automation platform for Databricks, SQL/Oracle, and AI Platform with request intake, approval routing, and provisioning",
+            "Implemented IAM governance workflows across Active Directory, LDAP, SCIM, and Unity Catalog with schema/table-level privileges",
+            "Built PySpark data pipelines on AWS Databricks for large-scale API data ingestion with validation checks",
+            "Designed file-based ingestion pipeline handling 1.5M files with orchestration, audit logging, and transformation",
+            "Implemented Retrieval-Augmented Generation pipeline using Databricks Vector Search with PDF extraction and embedding",
+            "Built Databricks-native multi-agent system with LangGraph combining RAG and Genie agents for knowledge retrieval",
+            "Managed 200+ Terraform workflows automating workspace creation, access requests, and Databricks object provisioning"
         ],
     },
     {
-        title: "Backend intern",
+        title: "Backend Developer Intern",
         company_name: "Celebal Technologies",
         icon: celebal,
         iconBg: "#383E56",
         date: "June 2023 - September 2023",
         points: [
-            "Handled APIs and created authentication login and logout",
-            "Utilized Passport middleware for authentication",
-            "Developed flight booking chatbots using Microsoft Bot Builder Framework",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Built authentication (login/logout) for REST API using Passport middleware",
+            "Developed flight booking chatbot using Microsoft Bot Framework",
+            "Participated in code reviews and providing constructive feedback to other developers",
+        ],
+    },
+    {
+        title: "Full Stack Developer Intern",
+        company_name: "DotGlasses",
+        icon: dotglasse,
+        iconBg: "#E6DEDD",
+        date: "May 2022 - July 2022",
+        points: [
+            "Built responsive webpage using REACT JS for sustainable vision correction product",
+            "Created Chat Bot using MongoDB, Node JS, Express JS, and React JS",
+            "Implemented authentication with user login and sign up functionality",
+            "Project successfully completed with team strategies and positive company feedback",
         ],
     },
    
 ];
 const educations = [
     {
-        name: "Secondary School Education",
-        icon: diploma,
-        iconBg: "#E6DEDD",
-        date: "2016 - 2017",
-        description: "Sri Sai Maruthi School  CGPA 8.8, Ananthapuram."
-    },
-   
-    {
-        name: "Diploma ",
-        icon: diploma,
-        iconBg: "#E6DEDD",
-        date: "2017 - 2020",
-        description: "Sree vidyanikethan Engineering College with 83.3%, Tirupathi."
-    },
-    {
         name: "Bachelor of Technology in Computer Science",
         icon: btech,
         iconBg: "#E6DEDD",
         date: "2020 - 2023",
         description: "Aditya College of Engineering and Technology with CGPA 6.48, Surampalem."
-
-
+    },
+    {
+        name: "Diploma in Computer Management Engineering",
+        icon: diploma,
+        iconBg: "#E6DEDD",
+        date: "2017 - 2020",
+        description: "Sree Vidyanikethan Engineering College with 83.3%, Tirupathi."
+    },
+    {
+        name: "Secondary School Education",
+        icon: diploma,
+        iconBg: "#E6DEDD",
+        date: "2016 - 2017",
+        description: "Sri Sai Maruthi School CGPA 8.8, Ananthapuram."
     },
    
 ]
 const projects = [
     {
-        name: "Full Stack application development ",
+        name: "Access Automation Platform",
         description:
-            "Building an webpage. Made this website responsive using REACT JS. Created a Chat Bot using MONGO DB ,NODE JS, EXPRESS JS, REACTJS Building an authentication user login and Sign up. This project was successfully completed with my strategies.My presentation got good appreciation from company",
+            "Self-service platform for enterprise Databricks, SQL/Oracle, and AI Platform access management. Integrated with Helix Work Orders for approval-driven provisioning covering request intake, routing, provisioning, and lifecycle tracking.",
         tags: [
             {
-                name: "react",
+                name: "Databricks",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "Python",
                 color: "green-text-gradient",
             },
             {
-                name: "Html & Css",
+                name: "Active Directory & LDAP",
                 color: "pink-text-gradient",
             },
             {
-                name: "nodejs",
+                name: "Terraform",
                 color: "blue-text-gradient",
             },
         ],
         image: carrent,
-        source_code_link: "https://github.com/karthikarnm/dotglasses-using-react",
+        source_code_link: "https://github.com/karthikarnm",
     },
     {
-        name: "FlightBooking ChatBot",
+        name: "RAG Pipeline with Multi-Agent System",
         description:
-            "This bot has been created using Bot Framework, it shows how to:Use LUIS to implement core AI capabilities Implement a multi- turn conversation using Dialogs Handle user interruptions for such things as Help or Cancel Prompt for and validate requests for information from the user",
+            "Databricks-native Retrieval-Augmented Generation system using Vector Search with multi-agent architecture. Combines unstructured data retrieval (SharePoint/OneDrive) with structured data queries via Databricks Genie, unified through supervisor agent routing.",
         tags: [
             {
-                name: "MS BotBuilder Framework", 
+                name: "Databricks", 
                 color: "blue-text-gradient",
             },
             {
-                name: "NodeJs",
+                name: "LangGraph",
                 color: "green-text-gradient",
+            },
+            {
+                name: "Vector Search",
+                color: "pink-text-gradient",
             },
         ],
         image: jobit,
-        source_code_link: "https://github.com/karthikarnm/Flight_Booking_Bot",
+        source_code_link: "https://github.com/karthikarnm",
     },
     {
-        name: "URL Shrinker Web Application",
+        name: "Large-Scale Data Ingestion Pipeline",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations. Provided a solution for reducing the length of web page addresses for easier tracking and memorization.",
+            "File-based ingestion pipeline handling 1.5M files with PySpark on AWS Databricks. Features download orchestration, audit-table logging, data validation, transformation, and automated job scheduling.",
         tags: [
             {
-                name: " Node.js & Express.js",
+                name: "PySpark",
                 color: "blue-text-gradient",
             },
             {
-                name: "HTML & CSS",
+                name: "AWS",
                 color: "green-text-gradient",
             },
             {
-                name: "MongoDB",
+                name: "Databricks",
                 color: "pink-text-gradient",
             },
         ],
         image: tripguide,
-        source_code_link: "https://github.com/karthikarnm/url-shortner",
+        source_code_link: "https://github.com/karthikarnm",
     },
 ];
 
