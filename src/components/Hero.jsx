@@ -7,39 +7,45 @@ import { styles} from '../style'
 import { ComputersCanvas } from './canvas';
 const Hero = () => {
   return (
-      <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0  xs:top-20 top-[170px] max-w-7xl mx-auto flex flex-row items-start gap-5 mb-5 `}>
-        <div className='flex flex-col justify-center items-center mt-5' >
-        <div className='w-5 h-5 rounded-full bg-[#915eff]' />
-        <div className='w-1 sm:h-90 h-40 violet-gradient' />
-        </div>
-        <div>
-          <h3 className={`${styles.heroHeadText} text-white`}>Hi, I'm 
-          <span className='text-[#915eff]'>Karanam Karthik</span></h3>
-          <p className={`${styles.heroSubText}mt-2 text-white-100`}>Data & Platform Engineer | Databricks Specialist <br className='sm:hidden ls:hidden lg:block' /> GenAI & Cloud Automation Expert <br className='sm:hidden lg:block' /> Building scalable data pipelines and enterprise solutions</p>
+    <section className='relative w-full min-h-screen mx-auto'>
+      <div className={`${styles.paddingX} max-w-7xl mx-auto pt-28 pb-12 sm:pt-32 lg:pt-36`}>
+        <div className='flex items-start gap-5 max-w-5xl'>
+          <div className='flex flex-col justify-center items-center pt-2'>
+            <div className='w-5 h-5 rounded-full bg-[#915eff]' />
+            <div className='w-1 h-32 sm:h-40 violet-gradient' />
+          </div>
+          <div className='max-w-3xl'>
+            <h3 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm <span className='text-[#915eff]'>Karthik Karanam</span>
+            </h3>
+            <p className={`${styles.heroSubText} mt-5 text-white-100`}>
+              Data Engineer | Databricks, PySpark, Python, AWS <br className='sm:hidden lg:block' />
+              Building GenAI-powered data platforms (RAG, Agents) <br className='sm:hidden lg:block' />
+              Databricks Certified GenAI Engineer
+            </p>
+          </div>
         </div>
       </div>
-      <div className=' xs:overflow hidden w-full'>       
-        <ComputersCanvas />
-</div>
-        <div className='absolute xs:bottom-20  bottom-[160px] w-full flex justify-center items-center'>
-          <a href = '#about'>
-            <div className=' w-[30px] h-[54px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 cursor-pointer '>
-            <motion.dev
-            animate= {{
-              y:[0,23,0]
-            }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "reverse",
-              duration: 1.5
-            }}
-            className='w-4 h-4 rounded-full bg-[#915eff] mb-5'
-            />
 
-            </div>
-          </a>
-        </div>
+      <div className='xs:overflow hidden w-full'>
+        <ComputersCanvas />
+      </div>
+
+      <div className='absolute xs:bottom-20 bottom-10 w-full flex justify-center items-center'>
+        <a href='#about'>
+          <div className='w-[30px] h-[54px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 cursor-pointer'>
+            <motion.div
+              animate={{ y: [0, 23, 0] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: 'reverse',
+                duration: 1.5,
+              }}
+              className='w-4 h-4 rounded-full bg-[#915eff] mb-5'
+            />
+          </div>
+        </a>
+      </div>
     </section>
   )
 }

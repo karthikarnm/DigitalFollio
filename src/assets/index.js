@@ -33,7 +33,8 @@ import diploma from './diploma.png'
 import celebal from './company/Celebal.png'
 import dotglasse from './company/dotglasse.png'
 import phablecare from './company/phablecare.png'
-import  Karanam_Karthik  from "./ResumeDownload/Karanam_Karthik.pdf"
+import byteAnalytics from './company/byte-logo.png'
+import Karanam_Karthik from "./ResumeDownload/Karanam_Karthik.pdf"
 export {
   logo,
   backend,
@@ -65,5 +66,6 @@ export {
   celebal,
   dotglasse,
   phablecare,
+  byteAnalytics,
   Karanam_Karthik
 };

@@ -8,42 +8,53 @@ import { EarthCanvas } from "./canvas"
 import { Wrapper } from "../HOC"
 import { slideIn } from "../utils/motion"
 
-import  Resume  from "./Resume"
-// template_qruq1ji 
-// service_5gjaj2u
-// xW5NnXCMjXW4lBGaO
+import Resume from "./Resume"
+
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_a64883b'
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_49wbc7j'
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'jaPxB4Q8GEqz8BB2J'
 
 const Contact = () => {
   const formRef = useRef()
-  const [form, setForm] = useState(
-    { name: "", email: "", message: "" })
+  const [form, setForm] = useState({ name: "", email: "", message: "" })
   const [loading, setLoading] = useState(false)
+
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({...form, [name]: value})
-
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
   }
+
   const handleSubmit = (e) => {
-e.preventDefault();
-setLoading(true);
-    emailJs.send('service_5gjaj2u', 'template_49wbc7j',{
-  from_name: form.name,
-  from_email: form.email,
-  to_name: 'Karanam Karthik',
-  to_email: 'karanamkarthi5@gmail.com',
-  message: form.message,
-}, 'waDCX71fCi35ttqGc').then(() => {
-setLoading(false);
-alert("Thank you for Your time and message!");
-setForm({ name: "", email: "", message: "" })
-  
+    e.preventDefault()
 
-  }, (error) => {
-    setLoading(false);
-    console.log(error)
-    alert("Something went wrong", error);
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      alert('Please complete all fields before sending the message.')
+      return
+    }
+
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY || EMAILJS_PUBLIC_KEY === 'your_public_key') {
+      alert('EmailJS is not configured yet. Please add your EmailJS service, template, and public key in the environment variables.')
+      return
+    }
+
+    setLoading(true)
+
+    emailJs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      from_name: form.name,
+      from_email: form.email,
+      to_name: 'Karanam Karthik',
+      to_email: 'karanamkarthi5@gmail.com',
+      message: form.message,
+    }, EMAILJS_PUBLIC_KEY).then(() => {
+      setLoading(false)
+      alert('Thank you for your time and message!')
+      setForm({ name: '', email: '', message: '' })
+    }, (error) => {
+      setLoading(false)
+      console.error(error)
+      alert('EmailJS rejected the message. Please verify the EmailJS service/template/public key configuration.')
+    })
   }
-)}
 
   return (
     <div className="xl:mt-12 xl flex

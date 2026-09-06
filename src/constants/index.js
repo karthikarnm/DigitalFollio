@@ -21,6 +21,7 @@ python,
     celebal,
     dotglasse,
     phablecare,
+    byteAnalytics,
    
 } from "../assets";
 
@@ -56,15 +57,6 @@ const services = [
         title: "Data Engineer",
         icon: web,
     },
-    {
-        title: "Platform Engineer",
-        icon: mobile,
-    },
-    {
-        title: "GenAI Specialist",
-        icon: backend,
-    },
-
 ];
 const certificates = [
     {
@@ -90,16 +82,28 @@ const technologies = [
         icon: python,
     },
     {
+        name: "SQL",
+        icon: html,
+    },
+    {
         name: "PySpark",
         icon: python,
     },
     {
-        name: "SQL",
+        name: "Oracle SQL",
+        icon: html,
+    },
+    {
+        name: "SQL Server",
         icon: html,
     },
     {
         name: "Databricks",
         icon: reactjs,
+    },
+    {
+        name: "Unity Catalog",
+        icon: nodejs,
     },
     {
         name: "AWS",
@@ -110,20 +114,44 @@ const technologies = [
         icon: mongodb,
     },
     {
-        name: "Git",
+        name: "Active Directory",
         icon: git,
     },
     {
-        name: "JavaScript",
+        name: "LDAP",
+        icon: git,
+    },
+    {
+        name: "SCIM",
+        icon: git,
+    },
+    {
+        name: "Service-Principal Provisioning",
+        icon: git,
+    },
+    {
+        name: "Retrieval-Augmented Generation (RAG)",
         icon: javascript,
+    },
+    {
+        name: "LangGraph",
+        icon: javascript,
+    },
+    {
+        name: "Vector Search / Vector Databases",
+        icon: javascript,
+    },
+    {
+        name: "Databricks Genie",
+        icon: reactjs,
     }
 ];
 
 const experiences = [
     {
-        title: "Junior Engineer",
-        company_name: "Byte Analytics Private Limited",
-        icon: celebal,
+        title: "Data Engineer",
+        company_name: "Byte Analytics Private Limited (Contracted to Continental Resources Inc.)",
+        icon: byteAnalytics,
         iconBg: "#E6DEDD",
         date: "Feb 2024 - Present",
         points: [

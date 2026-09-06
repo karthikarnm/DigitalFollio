@@ -42,13 +42,8 @@ const About = () => {
       </motion.div>
       <motion.p variants={fadeIn('', '', 0.1, 1)} className='
       mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        I am a Data & Platform Engineer specializing in Databricks with hands-on expertise in data pipeline engineering, infrastructure-as-code, and identity/access governance. Databricks Certified Generative AI Engineer Associate with production experience building RAG pipelines and multi-agent systems. Passionate about building scalable enterprise solutions on cloud platforms like AWS with Python, PySpark, and Terraform.
+        I’m a Data Engineer at Byte Analytics, where I build scalable data pipelines and platform automation on Databricks — using Python, PySpark, and AWS to move data from raw ingestion through to production-ready tables. My core work spans data pipeline engineering, platform automation and governance, and GenAI on the data platform. I like working at the intersection of solid data engineering fundamentals and the newer GenAI tooling being built on top of platforms like Databricks — pipelines that are reliable first, and intelligent second.
       </motion.p>
-      <div className=' mt-20 flex flex-row flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </>
   )
 }
